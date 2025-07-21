@@ -1,6 +1,6 @@
 #Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, 
 #mostrando uma mensagem de erro e voltando a pedir as informações.
-
+"""
 uti = (input("Username: "))
 passw = (input("password: "))
 while passw==uti:
@@ -9,5 +9,33 @@ while passw==uti:
   #if val != uti:
   #  print("o loop vai terminar")  
   #  break
+"""
+#Supondo que a população de um país A seja da ordem de 80000 habitantes com uma taxa anual de crescimento de 3% 
+# e que a população de B seja 200000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule 
+# e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, 
+# mantidas as taxas de crescimento.
 
+paisA = 80000
+paisB = 200000
+taxaA = 0.03
+taxaB = 0.015
+
+anos = 0
+
+
+print(anos)
+print(f"\n {paisA}")
+print(f"\n {paisB}")
+
+while paisA <= paisB:
+  
+  paisA *= 1+taxaA
+  paisB *= 1+taxaB
+
+  anos += 1
+
+  
+print(f"{anos}")
+print(f"\n {paisA}")
+print(f"\n {paisB}")
 
